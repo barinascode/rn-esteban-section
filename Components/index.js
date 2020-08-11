@@ -4,13 +4,28 @@ import { View } from 'react-native'
 function index( props ){
 
     const { 
-        children, row, column, 
+      fullCenter, children, row, column,
+      flex1,
         w1, w2, w3, w4, w45, w5, w6, w7, w8, w9, w10, 
-        mb1, mb2, mb3, mb4, mb5, mb6, mb7, mb8, mb9, mb10, mb11, mb12, mb13, mb14, mb15,
         ph1, ph2, ph3,ph4, ph5, ph6, ph7, ph8, ph9, ph10,ph11, ph12, ph13, ph14, ph15
-    } = props
+      } = props
+      
+      const { mb10, mb20, mb30, mb40, mb50, mb60, mb70, mb80, mb90, mb100 } = props
 
     const style = {}
+
+    if( fullCenter ){
+      style.justifyContent= 'center'
+      style.alignItems= 'center'
+    }
+
+    if(props.spaceBetween){
+      style.justifyContent = 'space-between'
+    }
+
+    if( flex1 ){
+      style.flex = 1
+    }
 
     if( row )
     style.flexDirection = 'row'
@@ -51,50 +66,35 @@ function index( props ){
     style.width = '100%'
 
 
-    if( mb1 )
-    style.marginBottom = 1
-
-    if( mb2 )
-    style.marginBottom = 2
-
-    if( mb3 )
-    style.marginBottom = 3
-
-    if( mb4 )
-    style.marginBottom = 4
-
-    if( mb5 )
-    style.marginBottom = 5
-
-    if( mb6 )
-    style.marginBottom = 6
-
-    if( mb7 )
-    style.marginBottom = 7
-
-    if( mb8 )
-    style.marginBottom = 8
-
-    if( mb9 )
-    style.marginBottom = 9
-
-    if( mb10 )
+    if(mb10)
     style.marginBottom = 10
+  
+  if(mb20)
+    style.marginBottom = 20
 
-    if( mb11 )
-    style.marginBottom = 11
+  if(mb30)
+    style.marginBottom = 30
 
-    if( mb12 )
-    style.marginBottom = 12
+  if(mb40 )
+    style.marginBottom = 40
 
-    if( mb13 )
-    style.marginBottom = 13
+  if(mb50 )
+    style.marginBottom = 50
 
-    if( mb14 )
-    style.marginBottom = 14
+  if(mb60 )
+    style.marginBottom = 60
 
-    if( mb15 )
-    style.marginBottom = 15
+  if(mb70 )
+    style.marginBottom = 70
+
+  if(mb80 )
+    style.marginBottom = 80
+
+  if(mb90 )
+    style.marginBottom = 90
+
+  if(mb100 )
+    style.marginBottom = 100
 
 
     
@@ -146,10 +146,8 @@ function index( props ){
     style.paddingHorizontal = 15
 
 
-    style.justifyContent = 'space-between'
-
     return (
-        <View style={ style }>
+        <View style={style}>
             { children }
         </View>
     )
