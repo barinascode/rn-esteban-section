@@ -1,6 +1,7 @@
-#### Installation : 
+#### Description
+This is a micro components of netodos tools
 
-We recommend using the releases from npm, however if you need some features that are not published on npm yet you can install react-native-camera from git.
+#### Installation : 
 
 **yarn**: `yarn add rn-esteban-section`
 
