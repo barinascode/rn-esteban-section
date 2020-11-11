@@ -13,253 +13,257 @@ function index( props ){
   const { jc } = props
   const { alignRight } = props
   const { flex1 } = props
-  const style = {}
+  const { style } = props
+  
+  const styles = {}
 
-    if( fullCenter ){
-      style.justifyContent= 'center'
-      style.alignItems= 'center'
-    }
+  if( fullCenter ){
+    styles.justifyContent= 'center'
+    styles.alignItems= 'center'
+  }
 
-    if(props.spaceBetween){
-      style.justifyContent = 'space-between'
-    }
+  if(props.spaceBetween)
+    styles.justifyContent = 'space-between'
 
   if( flex1 )
-    style.flex = 1
+    styles.flex = 1
 
   if( jc )
-    style.justifyContent = 'center'
+    styles.justifyContent = 'center'
 
   if( alignRight )
-    style.alignItems = 'flex-end'
+    styles.alignItems = 'flex-end'
 
   if( alignLeft )
-    style.alignItems = 'flex-start'
+    styles.alignItems = 'flex-start'
 
 
-
+  /*
+    @Distribuion section
+  */
   if( row )
-    style.flexDirection = 'row'
+    styles.flexDirection = 'row'
 
   if( column )
-    style.flexDirection = 'column'
+    styles.flexDirection = 'column'
+
+
+
 
   if( w1 )
-    style.width = '10%'
+    styles.width = '10%'
 
   if( w2 )
-    style.width = '20%'
+    styles.width = '20%'
 
   if( w3 )
-    style.width = '30%'
+    styles.width = '30%'
 
   if( w4 )
-    style.width = '40%'
+    styles.width = '40%'
 
   if( w45 )
-    style.width = '45%'
+    styles.width = '45%'
 
   if( w5 )
-    style.width = '50%'
+    styles.width = '50%'
 
   if( w6 )
-    style.width = '60%'
+    styles.width = '60%'
 
   if( w7 )
-    style.width = '70%'
+    styles.width = '70%'
 
   if( w8 )
-    style.width = '80%'
+    styles.width = '80%'
 
   if( w9 )
-    style.width = '90%'
+    styles.width = '90%'
 
   if( w10 )
-    style.width = '100%'
+    styles.width = '100%'
 
 
 
   if( mh1 )
-    style.minHeight = 10
+    styles.minHeight = 10
 
   if( mh2 )
-    style.minHeight = 20
+    styles.minHeight = 20
 
   if( mh3 )
-    style.minHeight = 30
+    styles.minHeight = 30
 
   if( mh4 )
-    style.minHeight = 40
+    styles.minHeight = 40
 
   if( mh5 )
-    style.minHeight = 50
+    styles.minHeight = 50
 
   if( mh6 )
-    style.minHeight = 60
+    styles.minHeight = 60
 
   if( mh7 )
-    style.minHeight = 70
+    styles.minHeight = 70
 
   if( mh8 )
-    style.minHeight = 80
+    styles.minHeight = 80
 
   if( mh9 )
-    style.minHeight = 90
+    styles.minHeight = 90
 
   if( mh10 )
-    style.minHeight = 100
+    styles.minHeight = 100
 
 
 
   if(mb10)
-  style.marginBottom = 10
+  styles.marginBottom = 10
   
   if(mb20)
-    style.marginBottom = 20
+    styles.marginBottom = 20
 
   if(mb30)
-    style.marginBottom = 30
+    styles.marginBottom = 30
 
   if(mb40 )
-    style.marginBottom = 40
+    styles.marginBottom = 40
 
   if(mb50 )
-    style.marginBottom = 50
+    styles.marginBottom = 50
 
   if(mb60 )
-    style.marginBottom = 60
+    styles.marginBottom = 60
 
   if(mb70 )
-    style.marginBottom = 70
+    styles.marginBottom = 70
 
   if(mb80 )
-    style.marginBottom = 80
+    styles.marginBottom = 80
 
   if(mb90 )
-    style.marginBottom = 90
+    styles.marginBottom = 90
 
   if(mb100 )
-    style.marginBottom = 100
+    styles.marginBottom = 100
 
 
 
   if(mr10)
-    style.marginRight = 10
+    styles.marginRight = 10
 
   if(mr20)
-    style.marginRight = 20
+    styles.marginRight = 20
 
   if(mr30)
-    style.marginRight = 30
+    styles.marginRight = 30
 
   if(mr40 )
-    style.marginRight = 40
+    styles.marginRight = 40
 
   if(mr50 )
-    style.marginRight = 50
+    styles.marginRight = 50
 
   if(mr60 )
-    style.marginRight = 60
+    styles.marginRight = 60
 
   if(mr70 )
-    style.marginRight = 70
+    styles.marginRight = 70
 
   if(mr80 )
-    style.marginRight = 80
+    styles.marginRight = 80
 
   if(mr90 )
-    style.marginRight = 90
+    styles.marginRight = 90
 
   if(mr100 )
-    style.marginRight = 100
+    styles.marginRight = 100
 
 
 
   if( ph1 )
-    style.paddingHorizontal = 1
+    styles.paddingHorizontal = 1
 
   if( ph2 )
-    style.paddingHorizontal = 2
+    styles.paddingHorizontal = 2
 
   if( ph3 )
-    style.paddingHorizontal = 3
+    styles.paddingHorizontal = 3
 
   if( ph4 )
-    style.paddingHorizontal = 4
+    styles.paddingHorizontal = 4
 
   if( ph5 )
-    style.paddingHorizontal = 5
+    styles.paddingHorizontal = 5
 
   if( ph6 )
-    style.paddingHorizontal = 6
+    styles.paddingHorizontal = 6
 
   if( ph7 )
-    style.paddingHorizontal = 7
+    styles.paddingHorizontal = 7
 
   if( ph8 )
-    style.paddingHorizontal = 8
+    styles.paddingHorizontal = 8
 
   if( ph9 )
-    style.paddingHorizontal = 9
+    styles.paddingHorizontal = 9
 
   if( ph10 )
-    style.paddingHorizontal = 10
+    styles.paddingHorizontal = 10
 
   if( ph11 )
-    style.paddingHorizontal = 11
+    styles.paddingHorizontal = 11
 
   if( ph12 )
-    style.paddingHorizontal = 12
+    styles.paddingHorizontal = 12
 
   if( ph13 )
-    style.paddingHorizontal = 13
+    styles.paddingHorizontal = 13
 
   if( ph14 )
-    style.paddingHorizontal = 14
+    styles.paddingHorizontal = 14
 
   if( ph15 )
-    style.paddingHorizontal = 15
+    styles.paddingHorizontal = 15
 
 
   if(height1)
-    style.height = 15
+    styles.height = 20
   
   if(height2)
-    style.height = 30
+    styles.height = 40
   
   if(height3)
-    style.height = 45
+    styles.height = 60
 
   if(height4)
-    style.height = 60
+    styles.height = 80
     
   if(height5)
-    style.height = 75
+    styles.height = 100
   
   if(height6)
-    style.height = 90
+    styles.height = 120
 
   if(height7)
-    style.height = 105
+    styles.height = 140
 
   if(height8)
-    style.height = 120
+    styles.height = 160
 
   if(height9)
-    style.height = 135
+    styles.height = 180
 
   if(height10)
-    style.height = 150
+    styles.height = 200
 
     
     return (
-        <View style={style}>
+        <View style={{ ...styles, ...style }}>
             { children }
         </View>
     )
     
-
-
 }
 
 export default index
